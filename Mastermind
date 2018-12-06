@@ -1,23 +1,35 @@
 
-
 void main() {
-   String [] couleurs1;
+   // tableau automatique
+    String [] couleurs1;
    couleurs1 = new String [4];
-   int n = random(1, 4);
-   String c = "endive";
-   if (n ==1) {
-      c = "bleu";
-   } else if (n ==2) {
-      c = "rouge";
-   } else if (n ==3) {
-      c = "noir";
-   } else {
-      c = "vert";
+   String c;
+   for (int i =0; i <4; i ++) {
+      int n = random(1, 4);
+      if (n ==1) {
+         c = "bleu";
+      } else if (n ==2) {
+         c = "rouge";
+      } else if (n ==3) {
+         c = "noir";
+      } else {
+         c = "vert";
+      }
+      couleurs1 [i] = c;
+      println(couleurs1[i]);
    }
-   couleurs1 [1] = c;
-   couleurs1[2] = c;
-   couleurs1[3] = c;
-   couleurs1[4] = c;
-   println(couleurs1[3]);
+   // tableau manuel
+    String [] couleurs2;
+   couleurs2 = new String [4];
+   println("Devinez les couleurs,");
+   println("il peut y avoir soit du bleu, soit du rouge, soit du noir ou alors du vert");
+   println("ne fais pas de fautes d'orthographe");
+   for (int i =0; i <4; i ++) {
+      String p = readString();
+      couleurs2 [i] = p;
+      println(couleurs2[i]);
+   }
+   // comparaison des tableaux
+   
 }
 
