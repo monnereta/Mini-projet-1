@@ -1,106 +1,88 @@
+
+String définitionopération(int s) {
+   // Définition type opération
+    String p;
+   if (s ==1) {
+      return  p = "+";
+   } else if (s ==2) {
+      return  p = "-";
+   } else if (s ==3) {
+      return  p = "*";
+   } else {
+      return  p = "/";
+   }
+}
+
 void main() {
-   // Définitions des variables.
-    String q = "+";
-   String p = "+";
-   int s = random(1, 4);
+  		 // Définitions des variables.
+   String q;
+   String p;
    int v = 0;
    int z = 0;
-   int w = 0;
-   int a = 0;
+   int o;
+   int s = random(4, 1);
    v = readInteger("Entrez un niveau de difficulté entre 1 et 3");
-   w = readInteger("Combien de calculs voulez vous faire ?");
-   //Niveau de difficulté 1.
+   p = définitionopération(s);
 
    if (v ==1) {
       int n = random(10, 0);
       int m = random(10, 0);
-      if (s ==1) {
-         p = "+";
-      } else if (s ==2) {
-         p = "-";
-      } else if (s ==3) {
-         p = "*";
-      } else {
-         p = "/";
-      }
       println("Donnez le résultat de:" + n + p + m);
       int r = readInteger("Donner le résultat de  " + n + p + m);
-      int o =0;
+      int i=0;
       if (s ==1) {
-         o = n + m;
+         i = n + m;
       } else if (s ==2) {
-         o = n - m;
+         i = n - m;
       } else if (s ==3) {
-         o = n * m;
+         i = n * m;
       } else {
-         o = n / m;
+         i = n / m;
       }
-      if (r == o) {
+      if (r == i) {
          println("Bravo c'est la bonne réponse!");
       } else {
-         println("Tu t'es trompé, le bon résultat était: " + o);
+         println("Tu t'es trompé, le bon résultat était: " + i);
       }
-      // Niveau de difficulté 2.
-    } else if (v ==2) {
-      int n = random(50, 10);
+   }  else if (v ==2) {
+   	      int n = random(50, 10);
       int m = random(50, 10);
-      if (s ==1) {
-         p = "+";
-      } else if (s ==2) {
-         p = "-";
-      } else if (s ==3) {
-         p = "*";
-      } else {
-         p = "/";
-      }
-      println("donnez le résultat de:" + n + p + m);
+      println("Donnez le résultat de:" + n + p + m);
       int r = readInteger("Donner le résultat de  " + n + p + m);
-      int o =0;
+      int i=0;
       if (s ==1) {
-         o = n + m;
+         i = n + m;
       } else if (s ==2) {
-         o = n - m;
+         i = n - m;
       } else if (s ==3) {
-         o = n * m;
+         i = n * m;
       } else {
-         o = n / m;
+         i = n / m;
       }
-      if (r == o) {
+      if (r == i) {
          println("Bravo c'est la bonne réponse!");
       } else {
-         println("Tu t'es trompé, le bon résultat était: " + o);
+         println("Tu t'es trompé, le bon résultat était: " + i);
       }
-      // Niveau de difficulté 3.
-    } else if (v ==3) {
-      int n = random(100, 50);
+   }   else if (v ==3) {
+   	      int n = random(100, 50);
       int m = random(100, 50);
-      if (s ==1) {
-         p = "+";
-      } else if (s ==2) {
-         p = "-";
-      } else if (s ==3) {
-         p = "*";
-      } else {
-         p = "/";
-      }
-      println("donnez le résultat de:" + n + p + m);
+      println("Donnez le résultat de:" + n + p + m);
       int r = readInteger("Donner le résultat de  " + n + p + m);
-      int o =0;
+      int i=0;
       if (s ==1) {
-         o = n + m;
+         i = n + m;
       } else if (s ==2) {
-         o = n - m;
+         i = n - m;
       } else if (s ==3) {
-         o = n * m;
+         i = n * m;
       } else {
-         o = n / m;
+         i = n / m;
       }
-      if (r == o) {
+      if (r == i) {
          println("Bravo c'est la bonne réponse!");
-         z = z +1;
       } else {
-         println("Tu t'es trompé, le bon résultat était: " + o);
+         println("Tu t'es trompé, le bon résultat était: " + i);
       }
-      println("Ton nombre de points est : " + z);
    }
 }
