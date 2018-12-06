@@ -1,1 +1,23 @@
 
+
+void main() {
+   String [] couleurs1;
+   couleurs1 = new String [4];
+   int n = random(1, 4);
+   String c = "endive";
+   if (n ==1) {
+      c = "bleu";
+   } else if (n ==2) {
+      c = "rouge";
+   } else if (n ==3) {
+      c = "noir";
+   } else {
+      c = "vert";
+   }
+   couleurs1 [1] = c;
+   couleurs1[2] = c;
+   couleurs1[3] = c;
+   couleurs1[4] = c;
+   println(couleurs1[3]);
+}
+
